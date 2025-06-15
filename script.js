@@ -38,19 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setInterval(updateHeroText, 5000);
 
-  // const video = document.getElementById('bannerVideo');
-  // video.addEventListener('click', () => {
-  //   if (video.paused) {
-  //     video.play();
-  //   } else {
-  //     video.pause();
-  //   }
-  // });
-  // video.addEventListener('ended', () => {
-  //   video.pause();
-  //   console.log('ended')
-  //   video.currentTime = 0;
-  // });
+  const video = document.getElementById('bannerVideo');
+  video.play();
 
 
   let container = document.getElementById('panorama-container')

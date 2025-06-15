@@ -183,7 +183,7 @@ header {
 .hero-gradient-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
 }
 .videobanner {
   width: 100%;
@@ -371,7 +371,7 @@ header {
   /* color: var(--warm-off-white); */
   color: var(--midnight-blue);
   height: max-content;
-  padding: 3rem 0rem;
+  padding: 3rem 2rem;
 }
 
 #journeys h2 {
@@ -412,9 +412,7 @@ header {
 
 #journeys .journey-card:hover {
   transform: translateY(-5px);
-  /* Lift effect on hover */
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
-  /* Enhanced shadow on hover */
 }
 
 #journeys .journey-card .image-wrapper {
@@ -517,6 +515,7 @@ header {
 }
 
 #testimonials .testimonial-card {
+  width: 100% !important;
   background-color: var(--warm-off-white);
   padding: 2rem 1rem;
   border-radius: 0.75rem;
@@ -633,7 +632,7 @@ header {
 }
 .section-background {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   overflow: hidden;
   background: url("assets/vrWedding.png");
   background-size: 100% 100%;
@@ -727,10 +726,14 @@ header {
 /* how-it-works  */
 
 .how-it-works {
+  width: 100%;
   height: max-content;
   padding: 3rem 1rem;
   text-align: center;
   background: linear-gradient(#ffffff, #e4e4e4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .how-it-works .section-title {
@@ -745,12 +748,12 @@ header {
 .how-it-works .steps {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 2rem;
   justify-content: center;
 }
 
 .how-it-works .step {
-  flex: 1 1 240px;
   max-width: 320px;
   background: #ffffff;
   padding: 2rem 1.5rem;
@@ -813,8 +816,8 @@ header {
 .contact-profile {
   width: max-content;
   height: 70%;
-  overflow: hidden;
   border-radius: 1rem;
+  overflow: hidden;
 }
 
 .contact-profile video {
@@ -956,6 +959,11 @@ header {
   html {
     font-size: 60%;
   }
+  .logo img{
+    width: auto;
+    height: max-content;
+  }
+
   #philosophy {
     padding: 2rem 0rem;
     gap: 2rem;
@@ -973,12 +981,34 @@ header {
   .contact-section {
     flex-direction: column;
   }
+
   .contact-section > div {
     width: 80%;
+  }
+  .contact-profile {
+    width: max-content !important;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+    margin-bottom: 2rem;
   }
   .custom-alert {
     width: 90%;
     height: 12vh;
     z-index: 10000000;
+  }
+  #testimonials {
+    background-size: auto 100%;
+  }
+  #testimonials .grid-container {
+  padding: 0rem 0rem;
+  }
+  .section-background {
+    background: url("assets/wedding-vrman.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
   }
 }
